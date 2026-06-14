@@ -22,10 +22,10 @@ const Main = () => {
   e.preventDefault();
 
   try {
-    const response = await axios.post(
-      "http://localhost:8000/api/enquiry",
-      formData
-    );
+     const response = await axios.post(
+  `https://roboticss.onrender.com/enquiry`,
+  formData
+);
 
     alert(response.data.message);
 
